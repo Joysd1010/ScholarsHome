@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "652ec981022e8568b9409926",
+    "teacherId": 1,
+    "image": "https://i.postimg.cc/0rg7JYnW/scholars-HOme-7.png",
+    "teacherName": "John Smith",
+    "degree": "M.B.A. in Sales and Marketing",
+    "enrolled":0,
+    "course":3
+
+  },
+  {
+    "_id": "652ec981022e8568b9409927",
+    "teacherId": 2,
+    "image": "https://i.postimg.cc/vTT0vtWG/scholars-HOme-5.png",
+    "teacherName": "Emily Johnson",
+    "degree": "M.A. in Marketing Strategy",
+    "enrolled":0,
+    "course":2
+  },
+  {
+    "_id": "652ec981022e8568b9409928",
+    "teacherId": 3,
+    "image": "https://i.postimg.cc/C11CyLdN/scholars-HOme-6.png",
+    "teacherName": "David Wilson",
+    "degree": "B.Sc. in Sales Management",
+    "enrolled":0,
+    "course":2
+  },
+  {
+    "_id": "652ec981022e8568b9409929",
+    "teacherId": 4,
+    "image": "https://i.postimg.cc/fbMjKvN1/scholars-HOme-4.png",
+    "teacherName": "Sarah Brown",
+    "degree": "M.Ed. in Marketing Education",
+    "enrolled":0,
+    "course":0
+  },
+  {
+    "_id": "652ec981022e8568b940992a",
+    "teacherId": 5,
+    "image": "https://i.postimg.cc/VLMVZ4xN/scholars-HOme-8.png",
+    "teacherName": "Michael Davis",
+    "degree": "Ph.D. in Marketing Analytics",
+    "enrolled":0,
+    "course":3
+  },
+  {
+    "_id": "652ec981022e8568b940992b",
+    "teacherId": 6,
+    "image": "https://i.postimg.cc/vmX7S68T/scholars-HOme-3.png",
+    "teacherName": "Linda Martinez",
+    "degree": "M.A. in Sales Psychology","enrolled":0,
+    "course":2
+  },
+  {
+    "_id": "652ec981022e8568b940992c",
+    "teacherId": 7,
+    "image": "https://i.postimg.cc/PxPD33FV/scholars-HOme-10.png",
+    "teacherName": "Robert Johnson",
+    "degree": "B.A. in Digital Marketing",
+    "enrolled":0,
+    "course":2
+  },
+  {
+    "_id": "652ec981022e8568b940992d",
+    "teacherId": 8,
+    "image": "https://i.postimg.cc/qq68Rbs6/scholars-HOme-2.png",
+    "teacherName": "Jennifer Adams",
+    "degree": "Ph.D. in Sales and Marketing Research",
+    "enrolled":0,
+    "course":1
+  },
+  {
+    "_id": "652ec981022e8568b940992e",
+    "teacherId": 9,
+    "image": "https://i.postimg.cc/V6rSBSd3/scholars-HOme-9.png",
+    "teacherName": "William Turner",
+    "degree": "M.B.A. in International Sales",
+    "enrolled":0,
+    "course":1
+  },
+  {
+    "_id": "652ec981022e8568b940992f",
+    "teacherId": 10,
+    "image": "https://i.postimg.cc/y62GT2r5/scholars-HOme-1.png",
+    "teacherName": "Amanda White",
+    "degree": "B.Sc. in E-Commerce and Marketing",
+    "enrolled":0,
+    "course":2
+  }
+]
