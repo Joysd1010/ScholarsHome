@@ -12,9 +12,8 @@ const InstructCard = ({tutor}) => {
       setMouse(true);
     };
     const leave = () => {
-      setMouse(false);
+      setMouse(false); 
     };
-
 
     return (
         <div>

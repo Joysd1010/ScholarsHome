@@ -11,6 +11,8 @@ import AuthProvider from "./Components/Provider/AuthProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Home from "./Components/Home/Home";
 import Instructors from "./Components/Instructor/Instructors";
+import Courses from "./Components/Course/Courses";
+
 
 
 const queryClient = new QueryClient();
@@ -38,14 +40,20 @@ const router = createBrowserRouter([
       //   loader: ({ params }) =>
       //     fetch(`https://kiddo-back-end-joysd1010.vercel.app/toys/${params.id}`),
       // },
-      // {
-      //   path: "/cart",
-      //   element: <Privateroute><Mycart /></Privateroute>,
-      // },
+      {
+        path: "/course",
+        element: < Courses/>,
+      },
+
       {
         path: "/instruct",
         element: <Instructors />,
       },
+      // {
+      //   path: "/Admin",
+      //   element: <Seller />,
+      // },
+
 
       // { path: "/alltoy", element: <AllToy /> },
       // { path: "/contact", element: <ContactUS /> },

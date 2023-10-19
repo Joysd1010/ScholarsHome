@@ -11,7 +11,7 @@ import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
 
-    const { user, logOut } = useAuth
+    const { user, logOut } = useAuth()
     const logged=false
 
   const [CourseData, setData] = useState([]);
@@ -123,7 +123,7 @@ const Header = () => {
 
         <div>
           <div
-            className={`flex md:static absolute  md:flex-row flex-col justify-between items-start md:items-center gap-2 md:gap-4 ${
+            className={`flex md:static absolute  md:flex-row flex-col justify-around items-start md:items-center gap-2 md:gap-4 ${
               !menu
                 ? "top-20 right-1 md:px-0 px-5 bg-white py-2 duration-700 "
                 : "top-20 -right-40 duration-700"
@@ -133,19 +133,19 @@ const Header = () => {
               to={"/"}
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold text-base md:text-xl px-5 py-2 text-blue-600  ease-out duration-300 hover:-translate-y-3 "
-                  : "font-bold text-base md:text-xl px-5 hover:text-blue-600 hover:-translate-y-3 duration-700"
+                  ? "font-bold text-base md:text-xl px-5 py-2 text-blue-600  ease-out duration-300 hover:-translate-y-2 "
+                  : "font-bold text-base md:text-xl px-5 hover:text-blue-600 hover:-translate-y-2 duration-700"
               }
             >
               <p>Home</p>{" "}
             </NavLink>
 
             <NavLink
-              to={"alltoy"}
+              to={"course"}
               className={({ isActive }) =>
                 isActive
-                  ? " font-bold text-base md:text-xl px-5 py-2 text-blue-600  ease-out duration-300 hover:-translate-y-3 "
-                  : " font-bold text-base md:text-xl px-5 hover:text-blue-600 hover:-translate-y-3 duration-700"
+                  ? " font-bold text-base md:text-xl px-5 py-2 text-blue-600  ease-out duration-300 hover:-translate-y-2 "
+                  : " font-bold text-base md:text-xl px-5 hover:text-blue-600 hover:-translate-y-2 duration-700"
               }
             >
               <p>Courses</p>{" "}
@@ -155,8 +155,8 @@ const Header = () => {
               to={"instruct"}
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold text-base md:text-xl px-5 py-2 text-blue-600  ease-out duration-300 hover:-translate-y-3 "
-                  : "font-bold text-base md:text-xl px-5 hover:text-blue-600 hover:-translate-y-3 duration-300"
+                  ? "font-bold text-base md:text-xl px-5 py-2 text-blue-600  ease-out duration-300 hover:-translate-y-2 "
+                  : "font-bold text-base md:text-xl px-5 hover:text-blue-600 hover:-translate-y-2 duration-300"
               }
             >
               <p>Instructors</p>{" "}
@@ -165,8 +165,8 @@ const Header = () => {
               to={"contact"}
               className={({ isActive }) =>
                 isActive
-                  ? "font-bold text-base md:text-xl px-5 py-2 text-blue-600  ease-out duration-300 hover:-translate-y-3 "
-                  : "font-bold text-base md:text-xl px-5 hover:text-blue-600 hover:-translate-y-3 duration-300"
+                  ? "font-bold text-base md:text-xl px-3 py-2 text-blue-600  ease-out duration-300 hover:-translate-y-2 "
+                  : "font-bold text-base md:text-xl px-3 hover:text-blue-600 hover:-translate-y-2 duration-300"
               }
             >
               <p>Blog</p>{" "}
@@ -179,8 +179,8 @@ const Header = () => {
                   to={"Admin"}
                   className={({ isActive }) =>
                     isActive
-                      ? "font-bold text-base md:text-xl px-5 py-2 text-blue-600  ease-out duration-700 hover:-translate-y-3 "
-                      : " font-bold text-base md:text-xl px-5 hover:text-blue-600 hover:-translate-y-3 duration-300"
+                      ? "font-bold text-base md:text-xl px-3 py-2 text-blue-600  ease-out duration-700 hover:-translate-y-2 "
+                      : " font-bold text-base md:text-xl px-3 hover:text-blue-600 hover:-translate-y-2 duration-300"
                   }
                 >
                   <p>DashBoard</p>{" "}
@@ -191,8 +191,8 @@ const Header = () => {
                   to="/cart"
                   className={({ isActive }) =>
                     isActive
-                      ? " font-bold text-base md:text-xl px-5 py-2 rounded-md text-blue-400  duration-300 "
-                      : " font-bold text-base md:text-xl px-5  duration-300 "
+                      ? " font-bold text-base md:text-xl px-3 py-2 rounded-md text-blue-400  duration-300 "
+                      : " font-bold text-base md:text-xl px-3  duration-300 "
                   }
                 >
                   <BsFillBasketFill size={30} />{" "}
@@ -219,7 +219,7 @@ const Header = () => {
                 to={"/login"}
                 className={({ isActive }) =>
                   isActive
-                    ? "font-bold text-base md:text-xl px-5 text-blue-600 py-2 duration-300"
+                    ? "font-bold text-base md:text-xl px-3 text-blue-600 py-2 duration-300"
                     : " font-bold text-base md:text-xl px-5  duration-300"
                 }
               >
@@ -228,10 +228,10 @@ const Header = () => {
             ) : (
               <div
                   onClick={logOut}
-                className="text-gray-600 font-bold text-base md:text-xl px-5  hover:bg-white hover:text-blue-800 hover:-translate-y-3 rounded-xl py-2 duration-500"
+                className="text-gray-600 font-bold md:text-xl px-3  hover:bg-white hover:text-blue-800 hover:-translate-y-2 rounded-xl py-2 duration-500"
               >
                 {" "}
-                Sign Out
+                SignOut
               </div>
             )}
           </div>
